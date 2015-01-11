@@ -20,7 +20,7 @@
   Discourse.ShareLink.addTarget('wechat', {
     iconClass: 'fa-wechat',
     generateUrl: function(link) {
-      return ("http://s.jiathis.com/qrcode.php?url=" + encodeURIComponent(link));
+      return ("http://cli.im/api/qrcode");
     },
     shouldOpenInPopup: true,
     popupHeight: 200
