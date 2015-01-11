@@ -23,7 +23,7 @@
       return ("http://cli.im/api/qrcode");
     },
     shouldOpenInPopup: true,
-    popupHeight: 200
+    popupHeight: 650
   });
 
 })();
