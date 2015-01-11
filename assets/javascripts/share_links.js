@@ -25,5 +25,14 @@
     shouldOpenInPopup: true,
     popupHeight: 650
   });
+  
+  Discourse.ShareLink.addTarget('QQ', {
+    iconClass: 'fa-qq',
+    generateUrl: function(link) {
+      return ("http://cli.im/api/qrcode");
+    },
+    shouldOpenInPopup: true,
+    popupHeight: 650
+  });
 
 })();
