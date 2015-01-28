@@ -1,7 +1,6 @@
+import Sharing from 'discourse/lib/sharing';
 
-(function() {
-
-Discourse.ShareLink.addSource({
+ShareLink.addSource({
     // This id must be present in the `share_links` site setting too
     id: 'weibo',
 
@@ -16,4 +15,3 @@ Discourse.ShareLink.addSource({
     popupHeight: 370
 });
 
-})();
