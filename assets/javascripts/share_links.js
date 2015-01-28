@@ -1,18 +1,17 @@
 
-(function() {
-    Discourse.Sharing.addSource({
+import Sharing from 'discourse/lib/sharing';
+Sharing.addSource({
+    // This id must be present in the `share_links` site setting too
+    id: 'weibo',
 
-      // This id must be present in the `share_links` site setting too
-      id: 'weibo',
+    // The icon that will be displayed
+    iconClass: 'fa-weibo',
 
-      // The icon that will be displayed
-      iconClass: 'fa-weibo',
-
-      generateUrl: function(link, title) {
-        return ("http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title));
-      },
+    generateUrl: function(link, title) {
+        return "http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title);
+    },
       
-      shouldOpenInPopup: true,
-      popupHeight: 370
-    });
-})();
+    shouldOpenInPopup: true,
+    popupHeight: 370
+});
+
