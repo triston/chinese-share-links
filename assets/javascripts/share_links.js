@@ -1,5 +1,5 @@
     import Sharing from 'discourse/lib/sharing';
-
+(function() {
     Sharing.addSource({
 
       // This id must be present in the `share_links` site setting too
@@ -15,3 +15,4 @@
       shouldOpenInPopup: true,
       popupHeight: 370
     });
+})();
