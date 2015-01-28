@@ -1,38 +1,17 @@
-(function() {
-  Discourse.ShareLink.addTarget('weibo', {
-    iconClass: 'fa-weibo',
-    generateUrl: function(link, title) {
-      return ("http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title));
-    },
-    shouldOpenInPopup: true,
-    popupHeight: 370
-  });
+    import Sharing from 'discourse/lib/sharing';
 
-  Discourse.ShareLink.addTarget('renren', {
-    iconClass: 'fa-renren',
-    generateUrl: function(link, title) {
-      return ("http://widget.renren.com/dialog/share?resourceUrl=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title) + "&description=" + encodeURIComponent(title));
-    },
-    shouldOpenInPopup: true,
-    popupHeight: 628
-  });
+    Sharing.addSource({
 
-  Discourse.ShareLink.addTarget('wechat', {
-    iconClass: 'fa-wechat',
-    generateUrl: function(link) {
-      return ("http://cli.im/api/qrcode");
-    },
-    shouldOpenInPopup: true,
-    popupHeight: 650
-  });
-  
-  Discourse.ShareLink.addTarget('QQ', {
-    iconClass: 'fa-qq',
-    generateUrl: function(link) {
-      return ("http://cli.im/api/qrcode");
-    },
-    shouldOpenInPopup: true,
-    popupHeight: 650
-  });
+      // This id must be present in the `share_links` site setting too
+      id: 'weibo',
 
-})();
+      // The icon that will be displayed
+      iconClass: 'fa-weibo',
+
+      generateUrl: function(link, title) {
+        return ("http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title));
+      },
+      
+      shouldOpenInPopup: true,
+      popupHeight: 370
+    });
