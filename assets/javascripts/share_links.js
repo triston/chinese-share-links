@@ -1,5 +1,5 @@
 import Sharing from 'discourse/lib/sharing';
-(function() {
+function() {
     ShareLink.addSource({
         // This id must be present in the `share_links` site setting too
         id: 'weibo',
@@ -14,5 +14,5 @@ import Sharing from 'discourse/lib/sharing';
         shouldOpenInPopup: true,
         popupHeight: 370
     });
-})();
+}
 
