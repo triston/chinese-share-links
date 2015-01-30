@@ -3,7 +3,7 @@ chinese-share-links
 
 Chinese share links is a plugin for Discourse to add share links for Weibo & Renren.
 
-为 Discourse 添加分享到微博和人人的支持。
+为 Discourse 添加分享到微博、人人、微信、QQ的支持。
 
 ## Installation / 安装
 
