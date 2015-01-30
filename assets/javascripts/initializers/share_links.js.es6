@@ -28,7 +28,7 @@ export default {
     Sharing.addSource({
       id: 'wechat',
       iconClass: 'fa-wechat',
-      generateUrl: function(link) {
+      generateUrl: function(link, title) {
         return ("http://cli.im/api/qrcode");
       },
       shouldOpenInPopup: true,
@@ -38,7 +38,7 @@ export default {
     Sharing.addsource({
       id: 'QQ',  
       iconClass: 'fa-qq',
-      generateUrl: function(link) {
+      generateUrl: function(link, title) {
         return ("http://cli.im/api/qrcode");
       },
       shouldOpenInPopup: true,
