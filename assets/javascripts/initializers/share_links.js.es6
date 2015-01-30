@@ -35,7 +35,7 @@ export default {
       popupHeight: 650
     });
     
-    Sharing.addsource({
+    Sharing.addSource({
       id: 'QQ',  
       iconClass: 'fa-qq',
       generateUrl: function(link, title) {
