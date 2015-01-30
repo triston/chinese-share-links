@@ -22,18 +22,28 @@ export default {
         return ("http://widget.renren.com/dialog/share?resourceUrl=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title) + "&description=" + encodeURIComponent(title));
       },
       shouldOpenInPopup: true,
-      popupHeight: 628
+      popupHeight: 650
     });
 
     Sharing.addSource({
       id: 'wechat',
       iconClass: 'fa-wechat',
       generateUrl: function(link) {
-        return ("http://s.jiathis.com/qrcode.php?url=" + encodeURIComponent(link));
+        return ("http://cli.im/api/qrcode");
       },
       shouldOpenInPopup: true,
-      popupHeight: 200
+      popupHeight: 650
     });
-
+    
+    Sharing.addsource({
+      id: 'QQ',  
+      iconClass: 'fa-qq',
+      generateUrl: function(link) {
+        return ("http://cli.im/api/qrcode");
+      },
+      shouldOpenInPopup: true,
+      popupHeight: 650
+    });
+    
   }
 };
