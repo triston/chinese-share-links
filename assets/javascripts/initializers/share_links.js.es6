@@ -7,7 +7,7 @@ export default {
 
     Sharing.addSource({
       id: 'weibo',
-      iconClass: 'fa-weibo',
+      faIcon: 'fa-weibo',
       generateUrl: function(link, title) {
         return ("http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title));
       },
@@ -17,7 +17,7 @@ export default {
 
     Sharing.addSource({
       id: 'renren',
-      iconClass: 'fa-renren',
+      faIcon: 'fa-renren',
       generateUrl: function(link, title) {
         return ("http://widget.renren.com/dialog/share?resourceUrl=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title) + "&description=" + encodeURIComponent(title));
       },
@@ -27,7 +27,7 @@ export default {
 
     Sharing.addSource({
       id: 'wechat',
-      iconClass: 'fa-wechat',
+      faIcon: 'fa-wechat',
       generateUrl: function(link, title) {
         return ("http://cli.im/api/qrcode");
       },
@@ -37,7 +37,7 @@ export default {
     
     Sharing.addSource({
       id: 'QQ',  
-      iconClass: 'fa-qq',
+      faIcon: 'fa-qq',
       generateUrl: function(link, title) {
         return ("http://cli.im/api/qrcode");
       },
