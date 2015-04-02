@@ -32,7 +32,8 @@ export default {
         return ("http://api.icanmake.cn/shareqr");
       },
       shouldOpenInPopup: true,
-      popupHeight: 650
+      popupWidth: 350,
+      popupHeight: 640
     });
     
     Sharing.addSource({
