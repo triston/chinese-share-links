@@ -29,7 +29,7 @@ export default {
       id: 'wechat',
       faIcon: 'fa-wechat',
       generateUrl: function(link, title) {
-        return ("http://cli.im/api/qrcode");
+        return ("http://api.icanmake.cn/shareqr");
       },
       shouldOpenInPopup: true,
       popupHeight: 650
