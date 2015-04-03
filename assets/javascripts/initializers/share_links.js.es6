@@ -42,7 +42,7 @@ export default {
         return ("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title));
       },
       shouldOpenInPopup: true,
-      popupHeight: 650
+      popupHeight: 370
     });
     
   }
