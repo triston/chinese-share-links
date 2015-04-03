@@ -36,10 +36,10 @@ export default {
     });
     
     Sharing.addSource({
-      id: 'QQ',  
+      id: 'QQZone',  
       faIcon: 'fa-qq',
       generateUrl: function(link, title) {
-        return ("http://cli.im/api/qrcode");
+        return ("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title));
       },
       shouldOpenInPopup: true,
       popupHeight: 650
